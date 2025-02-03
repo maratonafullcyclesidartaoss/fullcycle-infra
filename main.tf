@@ -6,7 +6,7 @@ module "ec2_instance" {
   instance_type          = "t2.micro"
   monitoring             = false
   vpc_security_group_ids = ["sg-06f76a53f08a418d4"]
-  subnet_id              = "subnet-0bfb6070cab586136"
+  subnet_id              = "subnet-024323b388ab68f2c"
 
   tags = {
     Terraform   = "true"
@@ -17,7 +17,7 @@ module "ec2_instance" {
 
 terraform {
   backend "s3" {
-    bucket = "teste-repo-fullcycle-sidartaoss"
+    bucket = "teste-repo-fullcycle-sidartaoss"'
     key    = "teste"
     region = "sa-east-1"
   }
