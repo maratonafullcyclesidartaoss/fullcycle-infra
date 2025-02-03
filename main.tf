@@ -17,7 +17,7 @@ module "ec2_instance" {
 
 terraform {
   backend "s3" {
-    bucket = "teste-repo-fullcycle"
+    bucket = "teste-repo-fullcycle-sidartaoss"
     key    = "teste"
     region = "sa-east-1"
   }
